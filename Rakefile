@@ -5,7 +5,7 @@ desc "Update assets"
 task 'update' do
   
   system("rm -rf bootstrap-timepicker-src")
-  system("git clone git://github.com/jdewit/bootstrap-timepicker.git bootstrap-timepicker-src")
+  system("git clone -b bootstrap-3 git://github.com/jcoleman/bootstrap-timepicker.git bootstrap-timepicker-src")
 
   system("cp bootstrap-timepicker-src/css/bootstrap-timepicker.min.css vendor/assets/stylesheets/bootstrap-timepicker.css")
   system("cp bootstrap-timepicker-src/js/bootstrap-timepicker.js vendor/assets/javascripts/bootstrap-timepicker.js")
